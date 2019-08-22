@@ -1,7 +1,7 @@
 
 const btn = document.querySelector('.btn');
 const menu = document.querySelector('.menu')
-const links =  document.querySelectorAll('.menu__item')
+const links =  document.querySelectorAll('.menu__list__item')
 
 btn.addEventListener('click', () =>{
   btn.classList.toggle('btn-open');

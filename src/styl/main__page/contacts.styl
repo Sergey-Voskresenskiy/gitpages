@@ -1,0 +1,28 @@
+.contacts
+	height 100vh
+	width 100vw
+	padding 0 20px
+	display grid
+	grid-template-columns repeat(1, 1fr)
+	justify-content center
+	align-items center
+	background #1b212d
+	
+	&__lists
+		display grid
+		justify-content center
+		align-items center
+		align-self baseline
+	&__item
+		padding 10px
+		font-size 18px
+	&__item
+		color #708090
+		&:hover
+			color white
+
+@media (max-width 992px)
+	.contacts
+		&__item
+			padding 10px
+			font-size 14px

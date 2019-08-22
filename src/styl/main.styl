@@ -1,0 +1,68 @@
+@import 'mixins'
+
+*
+	line-height 1.65 !important
+	box-sizing border-box
+	text-rendering optimizeLegibility
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+	outline none !important
+	-webkit-tap-highlight-color transparent !important
+
+html, body
+	scrollbar-width none
+	-ms-overflow-style none
+	
+	::-webkit-scrollbar
+		display none
+		width 0px
+	scroll-behavior smooth
+	font-family sans-serif
+	height 100%
+	width 100%
+	color #fafafa
+
+.container
+	width 1170px
+	+bp(l)
+		width 970px
+	+bp(m)
+		width 860px
+	+bp(800px)
+		width 100%
+	margin 0 auto
+
+img
+	height 100%
+	width 100%
+	object-fit cover
+
+button, input, textarea
+	margin 0
+	padding 0
+	background transparent
+
+span
+	color inherit
+
+b
+	font-weight bold
+
+a
+	text-decoration none
+	color inherit
+	tease()
+	&:hover
+		text-shadow 0 5px 5px rgba(cyan, .2)
+
+
+@import 'font.styl'
+
+@import './common/header.styl'
+@import './common/menu.styl'
+
+
+@import './main__page/hero.styl'
+@import './main__page/about.styl'
+@import './main__page/works.styl'
+@import './main__page/pins.styl'

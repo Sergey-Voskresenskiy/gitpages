@@ -1,0 +1,42 @@
+.pins
+	min-height 100vh
+	width 100vw
+	padding 80px 20px
+	background #0e222d
+	color #fafafa
+	display grid
+	h2
+		align-self center
+		margin-bottom 60px
+	&__items
+		display grid
+		grid-template-columns repeat(3, 1fr)
+		grid-gap 20px
+	&__item
+		display flex
+		justify-content center
+		align-items center
+		flex-direction column
+		.cp_embed_wrapper
+			width 100%
+	&__description
+		margin-bottom 20px
+	&__title
+		margin-bottom 10px
+	&__img
+		overflow hidden
+		height 350px
+		border 2px solid #1b212d
+		display flex
+		tease()
+		&:hover
+			border 2px solid #fff
+
+@media (max-width 992px)
+	.pins
+		&__items
+			grid-template-columns repeat(auto-fill, minmax(300px, 1fr))
+		&__title
+			text-align center
+		&__description
+			text-align center

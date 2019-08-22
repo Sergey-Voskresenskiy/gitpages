@@ -1,0 +1,53 @@
+.hero
+	height 100vh
+	width 100vw
+	padding 0 20px
+	display grid
+	grid-template-columns repeat(1, 1fr)
+	justify-content center
+	align-items center
+	background #1b212d
+	&__name
+		display flex
+		text-align center
+		justify-content center
+		align-self flex-end
+	&__description
+		display flex
+		justify-content center
+		align-self baseline
+		color cadetblue
+	&__scrollBnt
+		justify-self center
+		a
+			height 100%
+			position relative
+			span
+				position absolute
+				top 0
+				left 50%
+				width 24px
+				height 24px
+				margin-left -12px
+				border-left 1px solid #fafafa
+				border-bottom 1px solid #fafafa
+				transform rotate(-45deg)
+				animation blinking 1.5s ease-in-out infinite
+				box-sizing border-box
+
+@keyframes blinking
+	0%
+		transform rotate(-45deg) translate(0, 0)
+		opacity 0
+	
+	50%
+		opacity 1
+	
+	100%
+		transform rotate(-45deg) translate(-20px, 20px)
+		opacity 0
+
+@media (max-width 992px)
+	.hero
+		&__description
+			margin-top 20px

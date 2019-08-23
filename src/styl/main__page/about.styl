@@ -7,6 +7,20 @@
 	display grid
 	justify-content center
 	align-items center
+	position relative
+	z-index 4
+	&:after
+		background inherit
+		bottom 0
+		content ''
+		display block
+		height 20%
+		left 0
+		position absolute
+		right 0
+		transform skewY(-5deg)
+		transform-origin 100%
+		z-index -1
 	&__container
 		display grid
 		justify-content space-around

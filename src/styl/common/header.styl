@@ -5,7 +5,7 @@ header
 	position fixed
 	top 0
 	left 0
-	z-index 3
+	z-index 6
 	display flex
 	align-items center
 	justify-content flex-end
@@ -14,8 +14,10 @@ header
 		display flex
 		align-items center
 		position relative
-		z-index 3
+		z-index 6
 		.btn
+			position relative
+			z-index 7
 			width 25px
 			height 25px
 			display flex
@@ -25,9 +27,9 @@ header
 			transition transform 330ms ease-out
 			&__line
 				background-color cadetblue
-				border-radius 3px
+				border-radius 5px
 				width 100%
-				height 3px
+				height 5px
 				&-half
 					width 50%
 				&-start

@@ -6,7 +6,21 @@
 	grid-template-columns repeat(1, 1fr)
 	justify-content center
 	align-items center
-	background #1b212d
+	background #11141c
+	position relative
+	z-index 5
+	&:after
+		background inherit
+		bottom 0
+		content ''
+		display block
+		height 20%
+		left 0
+		position absolute
+		right 0
+		transform skewY(-5deg)
+		transform-origin 100%
+		z-index -1
 	&__name
 		display flex
 		text-align center

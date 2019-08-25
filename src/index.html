@@ -99,6 +99,20 @@
     <div class="pins__items">
       <div class="pins__item">
         <div class="pins__title">
+          <h3><a href="https://codepen.io/SergeyVoskresenskiy/pen/mNVYRv/">TABS and PUG</a></h3>
+        </div>
+        <div class="pins__description">
+          Pug / Styl / JS
+        </div>
+        <p class="codepen" data-height="387" data-theme-id="dark" data-default-tab="html,result" data-user="SergeyVoskresenskiy" data-slug-hash="VwZpmQX" data-preview="true" style="height: 387px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="TABS  and PUG ">
+          <span>See the Pen <a href="https://codepen.io/SergeyVoskresenskiy/pen/VwZpmQX/">
+          TABS and PUG </a> by Sergey Voskresenskiy (<a href="https://codepen.io/SergeyVoskresenskiy">@SergeyVoskresenskiy</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      </div>
+      <div class="pins__item">
+        <div class="pins__title">
           <h3><a href="https://codepen.io/SergeyVoskresenskiy/pen/mNVYRv/">Battery ( Web API : Navigator )</a></h3>
         </div>
         <div class="pins__description">
@@ -169,18 +183,32 @@
     </div>
   </section>
   <section id="contacts" class="contacts">
-    <h2>Contacts</h2>
-    <div class="contacts__lists">
-      <a href="tel:+380671305260" class="contacts__item">+38 (067) 130-52-60</a>
-      <a href="mailto:work.sergey.voskresenskiy@gmail.com" class="contacts__item">work.sergey.voskresenskiy@gmail.com</a>
-      <a href="https://t.me/Sheen_V" class="contacts__item">Telegram</a>
-      <a href="https://github.com/Sergey-Voskresenskiy" class="contacts__item">Github</a>
-      <a href="/assets/cv.pdf"  class="contacts__item">Download CV</a>
+    <div class="contacts__container">
+      <div class="contacts__lists">
+        <div class="contacts__form">
+          <form action="">
+            <h2>Type me</h2>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Company">
+            <input type="text" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button>Send</button>
+          </form>
+        </div>
+        <div class="contacts__items">
+          <h2>Contacts</h2>
+          <a href="tel:+380671305260" class="contacts__item">+38 (067) 130-52-60</a>
+          <a href="mailto:work.sergey.voskresenskiy@gmail.com" class="contacts__item">work.sergey.voskresenskiy@gmail.com</a>
+          <a href="https://t.me/Sheen_V" class="contacts__item">Telegram</a>
+          <a href="https://github.com/Sergey-Voskresenskiy" class="contacts__item">Github</a>
+          <a href="/assets/cv.pdf"  class="contacts__item">Download CV</a>
+        </div>
+      </div>
     </div>
   </section>
   <!--${require('./partials/footer.html')}-->
   ${require('./partials/menu.html')}
-  ${require('./partials/landscape.html')}
+<!--  ${require('./partials/landscape.html')}-->
 
 </body>
 </html>

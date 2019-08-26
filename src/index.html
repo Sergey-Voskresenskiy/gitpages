@@ -25,7 +25,7 @@
         <h2>Skills</h2>
         <ul>
           <li class="skills__description">English advance level: reading technical documentation, writing</li>
-          <li class="skills__description">Аdaptive/responsive markup, HTML5, CSS3, Bootstrap / Foundation / Flexbox / Grid
+          <li class="skills__description">Аdaptive/responsive markup, HTML5 / Pug, CSS3 / SASS / Stylus, Bootstrap / Foundation / Flexbox / Grid
             Css
           </li>
           <li class="skills__description">Adaptive/responsive markup for emails</li>
@@ -35,7 +35,8 @@
           <li class="skills__description">CMS (WP basics, Creating themes, work with plugins, ACF, multilingual plugins,
             optimization plugins, etc)
           </li>
-          <li class="skills__description">Version Control Systems: Git, GitHub, BitBucket, Gitlab</li>
+          <li class="skills__description">Version Control Systems: Git (GitHub, BitBucket, Gitlab)</li>
+          <li class="skills__description">Work with a task runner / build system: Gulp, Webpack</li>
           <li class="skills__description">Adobe Photoshop (Creating site templates)</li>
           <li class="skills__description">Adobe Experience Design (Creating site templates)</li>
         </ul>
@@ -186,13 +187,16 @@
     <div class="contacts__container">
       <div class="contacts__lists">
         <div class="contacts__form">
-          <form action="">
+          <form id="form" action="">
             <h2>Type me</h2>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Company">
-            <input type="text" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            <button>Send</button>
+            <div id="errorMessage">
+              Error?
+            </div>
+            <input type="text" id="formName" placeholder="Name">
+            <input type="text" id="formCompany" placeholder="Company">
+            <input type="email" id="formEmail" placeholder="Email">
+            <textarea id="formMessage" placeholder="Message"></textarea>
+            <button id="sendMail" type="button">Send</button>
           </form>
         </div>
         <div class="contacts__items">
@@ -206,7 +210,7 @@
       </div>
     </div>
   </section>
-  <!--${require('./partials/footer.html')}-->
+  ${require('./partials/footer.html')}
   ${require('./partials/menu.html')}
 <!--  ${require('./partials/landscape.html')}-->
 

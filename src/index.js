@@ -1,5 +1,6 @@
 import 'reset-css'
 import './styl/main.styl'
 import 'lazyload'
+import './js/formMail'
 import './js/app'
 import './js/burgerMenu'

@@ -31,12 +31,26 @@
 		display grid
 		justify-content center
 		align-items center
+		#errorMessage
+			tease()
+			line-height 1
+			border-radius 5px
+			text-transform uppercase
+			display none
+			justify-content center
+			align-items center
+			font-weight bold
+			font-size 11px
+			border 1px solid tomato
+			padding 15px
+			animation blinkError 2s ease-in-out infinite
 		form
 			display grid
 			min-width 300px
 			grid-gap 10px
 			grid-template-columns 1fr
 			input, textarea
+				font-size 14px
 				border 1px solid #708090
 				text-indent 10px
 				padding 15px
@@ -59,6 +73,17 @@
 					color #11141c
 					background #708090
 					border 1px solid #708090
+
+@keyframes blinkError
+	0%
+		border 1px solid tomato
+		background transparent
+	50%
+		border 1px solid #151822
+		background tomato
+	100%
+		border 1px solid tomato
+		background transparent
 
 @media (max-width 992px)
 	.contacts

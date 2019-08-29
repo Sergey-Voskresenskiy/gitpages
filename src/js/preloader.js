@@ -1,10 +1,5 @@
 (()=>{
-	const preloader = document.createElement('section')
-	const firstChild = document.body.firstChild
-
-	preloader.className = 'preloader'
-	preloader.innerHTML = '<div class="preloader__ico"></div><div class="preloader__spiner"></div>'
-	document.body.insertBefore(preloader, firstChild);
+	const preloader = document.querySelector('section')
 
 	window.addEventListener('load', ()=>{
 		preloader.className += ' fade'

@@ -1,0 +1,28 @@
+
+.preloader
+	display flex
+	justify-content center
+	align-items center
+	height 100%
+	width 100%
+	background #11141c
+	position fixed
+	left 0
+	top 0
+	z-index 7
+	tease()
+	opacity 1
+	&__spiner
+		width 80px
+		height 80px
+		border 2px solid rgba(#eee, .05)
+		border-bottom 3px solid #5f9ea0
+		border-radius 100%
+		animation spin 3s infinite linear
+.fade
+	opacity 0
+@keyframes spin
+	from
+		transform rotate(0deg)
+	to
+		transform rotate(360deg)
